@@ -1,0 +1,428 @@
+.section {
+
+}
+
+.section--hero {
+	padding: 36px 0;
+	background: black;
+
+	.section {
+
+		&__title {
+			font-size: 36px;
+			line-height: 33px;
+			color: white;
+			margin: 0;
+			margin-bottom: 36px;
+		}
+
+		&__small-subtitle {
+			line-height: 14px;
+			font-size: 16px;
+			color: white;
+			margin-bottom: 6px;
+		}
+
+		&__price {
+			font-size: 36px;
+			line-height: 32px;
+			color: white;
+			margin-bottom: 7px;
+		}
+
+		&__text {
+			font-size: 12px;
+			line-height: 14px;
+			color: white;
+			margin-bottom: 7px;
+		}
+
+		&__lead {
+			font-size: 12px;
+			font-weight: bold;
+			line-height: 14px;
+			margin-bottom: 19px;
+			color: white;
+		}
+
+		&__list {
+			margin: 0;
+			padding-left: 18px;
+			color: white;
+			margin-bottom: 36px;
+			width: 100%;
+
+			li {
+				font-size: 14px;
+				line-height: 17px;
+				margin-bottom: 12px;
+				width: 100%;
+			}
+		}
+
+		&__button {
+			color: black;
+			background: white;
+			font-size: 18px;
+			line-height: 54px;
+			width: 340px;
+			height: 54px;
+			display: inline-block;
+			text-align: center;
+			border-radius: 100px;
+		}
+	}
+
+	@media( min-width: 1024px ) {
+		background: url('../img/hero.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+		padding-bottom: 120px;
+
+		.section {
+
+			&__title {
+				font-size: 60px;
+				line-height: 57px;
+				margin-bottom: 18px;
+			}
+
+			&__large-subtitle {
+				color: white;
+				font-size: 18px;
+				line-height: 17px;
+				margin-bottom: 49px;
+			}
+
+			&__hook-bundle {
+				color: white;
+				p {
+					font-size: 18px;
+					line-height: 17px;
+					margin: 0;	
+				}
+
+				p:last-child {
+					margin-bottom: 6px;
+				}
+
+				hr {
+					margin: 13px 0;
+					width: 309px;
+					border: 1px solid white;
+				}
+			}
+
+			&__price {
+				font-size: 40px;
+				line-height: 46px;
+			}
+
+			&__text {
+				margin-bottom: 18px;
+			}
+
+			&__divider {
+				color: white;
+				font-size: 14px;
+				line-height: 17px;
+				margin-bottom: 13px;
+				margin-left: 71px;
+				position: relative;
+
+				&:before {
+					content: "";
+					position: absolute;
+					height: 2px;
+					width: 51px;
+					top: 6px;
+					left: -70px;
+					background: white;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					height: 2px;
+					width: 53px;
+					top: 6px;
+					left: 187px;
+					background: white;
+				}
+			}
+
+			&__list {
+				margin-bottom: 17px;
+			}
+
+			&__package {
+				color: white;
+				position: relative;
+				margin-bottom: 54px;
+
+				img {
+					margin-right: 33px;
+				}
+
+				span {
+					margin-right: 33px;
+				}
+
+				p {
+					display: inline-block;
+					margin: 0;
+					font-size: 14px;
+					line-height: 17px;
+					position: absolute;
+					bottom: 3px;
+					left: 198px;
+				}
+			}
+
+			&__button {
+				width: 234px;
+			}
+		}
+	}
+}
+
+.section--bundling {
+	padding-top: 120px;
+	padding-bottom: 180px;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		background: url('../img/bundling-bg.jpg');
+		background-size: cover;
+		background-position: center;
+		top: 0;
+		left: 0;
+		width: 47%;
+		height: 100%;
+	}
+
+	.section {
+
+		&__title {
+			font-size: 60px;
+			line-height: 57px;
+			margin-bottom: 18px;
+		}
+
+		&__text {
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 12px;
+		}
+
+		&__link {
+			font-size: 24px;
+			line-height: 23px;
+			color: $primary-link;
+			position: relative;
+
+			&:after {
+				content: "";
+				position: absolute;
+				background: url('../img/link-chevron.svg');
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				bottom: 3px;
+				right: -32px;
+				width: 14px;
+				height: 20px;
+			}
+		}
+	}
+}
+
+.section--bundles {
+	padding-top: 90px;
+	padding-bottom: 48px;
+	background: #F6F6F6;
+
+	.section {
+
+		&__title {
+			font-size: 60px;
+			line-height: 57px;
+			margin-top: 0;
+			margin-bottom: 12px;
+		}
+
+		&__lead {
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+.section--upgrade {
+	padding: 90px 0;
+
+	.section {
+
+		&__title {
+			font-size: 60px;
+			line-height: 57px;
+			margin-bottom: 12px;
+		}
+
+		&__lead {
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+.section--why {
+	padding-top: 90px;
+	padding-bottom: 89px;
+	background: #F6F6F6;
+
+	.section {
+
+		&__title {
+			font-size: 60px;
+			line-height: 57px;
+			margin-bottom: 12px;
+		}
+
+		&__lead {
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+.section--mobile-apps {
+	padding: 96px 0;
+
+	.section {
+
+		&__title {
+			margin: 0;
+			font-size: 60px;
+			line-height: 57px;
+			margin-bottom: 54px;
+		}
+
+		&__top, &__bottom {
+
+			h3 {
+				margin: 0;
+				font-size: 24px;
+				line-height: 23px;
+				margin-bottom: 12px;
+				padding-top: 14px;
+				width: 380px;
+				border-top: 2px solid black;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 16px;
+				width: 380px;
+				margin: 0;
+			}
+		}
+
+		&__top {
+			margin-bottom: 42px;
+		}
+	}
+}
+
+.section--switch {
+	padding: 120px 0;
+	background: url('../img/switch-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(to right, rgba(0, 0, 0, .55), rgba(255,255,255, .1));
+	}
+
+	.section {
+
+		&__title {
+			color: white;
+			font-size: 60px;
+			line-height: 57px;
+			margin-bottom: 18px;
+		}
+
+		&__text {
+			color: white;
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 36px;
+		}
+
+		&__link {
+			color: white;
+			font-size: 24px;
+			line-height: 23px;
+			position: relative;
+
+			&:after {
+				content: "";
+				position: absolute;
+				background: url('../img/white-chevron.svg');
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				width: 14px;
+				height: 20px;
+				bottom: 3px;
+				right: -26px;
+			}
+		}
+	}
+}
+
+.section--call-now {
+	padding-top: 90px;
+	padding-bottom: 71px;
+	border-bottom: 1px solid #CCC;
+
+	.section {
+
+		&__title {
+			font-size: 36px;
+			line-height: 34px;
+			margin-bottom: 24px;
+
+			span {
+				color: $primary-link; 
+			}
+		}
+
+		&__text {
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 6px;
+		}
+
+		&__source {
+			font-size: 12px;
+			line-height: 14.5px;
+		}
+	}
+}

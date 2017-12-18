@@ -1,0 +1,145 @@
+.header {
+
+	padding: 10px 0;
+
+	&__logo {
+		margin-left: 33px;
+	}
+
+	&__phone {
+		display: inline-block;
+		margin-left: 99px;
+		margin-bottom: 0;
+		font-size: 18px;
+		line-height: 1;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			background: url('../img/phone-icon.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 16px;
+			height: 16px;
+			bottom: 0;
+			left: -21px;
+		}
+	}
+
+	@media( min-width: 1024px ) {
+		padding: 0;
+		padding-bottom: 48px;
+
+		&__top-nav, &__user-nav {
+			margin: 0;
+			display: inline-block;
+
+			li > a {
+				color: black;
+				font-size: 12px;
+				line-height: 14px;
+				padding-top: 10px;
+			}
+		}
+
+		&__top-nav {
+			margin-right: 220px;
+
+			li + li {
+				margin-left: 34px;
+			}
+
+			li:first-child {
+				position: relative;
+			}
+
+			li:first-child:before {
+				content: "";
+				position: absolute;
+				width: 66px;
+				height: 2px;
+				background: black;
+				top: 0;
+				left: 0;
+			}
+		}
+
+		&__user-nav {
+
+			li + li {
+				margin-left: 28px;
+			}
+
+			li:first-child, li:last-child {
+				position: relative;
+			}
+
+			li:first-child:before {
+				content: "";
+				position: absolute;
+				background: url('../img/user-icon.svg');
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				bottom: 2px;
+				left: -14px;
+				width: 8px;
+				height: 12px;
+			}
+
+			li:nth-child(2) {
+				margin-right: 20px;
+			}
+
+			li:last-child:before {
+				content: "";
+				position: absolute;
+				background: url('../img/cart-icon.svg');
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				bottom: 2px;
+				left: -21px;
+				width: 15px;
+				height: 12px;
+			}
+		}
+
+		&__main-nav {
+			display: inline-block;
+			transform: translateY(110%);
+			padding-left: 10px;
+			margin: 0;
+			margin-right: 242px;
+
+			li + li {
+				margin-left: 48px;
+			}
+
+			li > a {
+				color: black;
+				font-size: 24px;
+			}
+		}
+
+		&__call-section {
+			display: inline-block;
+				transform: translateY(80%);
+
+
+			span {
+				display: block;
+				font-size: 12px;
+				line-height: 17px;
+			}
+
+			a {
+				color: $primary-link;
+				font-size: 24px;
+				line-height: 23px;
+			}
+		}
+	}
+}

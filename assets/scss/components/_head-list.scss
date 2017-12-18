@@ -1,0 +1,31 @@
+.head-list {
+	margin-bottom: 58px;
+
+	> li {
+		font-size: 18px;
+		line-height: 17px;
+	}
+
+	> li + li {
+		margin-left: 85px;
+	}
+
+	&__sub-nav {
+		margin-top: 24px;
+		margin-left: 0;
+
+		li {
+			list-style: none;
+			font-size: 14px;
+			line-height: 17px;
+		}
+
+		li > a {
+			color: black;
+		}
+
+		li + li {
+			margin-top: 6px;
+		}
+	}
+}
